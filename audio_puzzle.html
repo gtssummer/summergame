@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звуковая загадка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1e2020;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        audio {
+            margin: 1rem 0;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Звуковая загадка</h1>
+        <div class="hint">
+            <p>Слушая пение птиц, задумайтесь:</p>
+            <p>Правда ли вы слышите все?</p>
+            <p>Если прислушаться внимательнее,</p>
+            <p>Какие тайны можно обнаружить?</p>
+            <p>Только ли ушами можно воспринимать звуки?</p>
+            <p>Рассмотрите возможность увидеть мелодию.</p>
+            <p>Обратите внимание на частоты и время.</p>
+            <p>Главное - найти правильный инструмент анализа.</p>
+            <p>Разложите звук на составляющие.</p>
+            <p>Анализируя визуально, вы увидите больше.</p>
+            <p>Может быть, в высоких частотах скрыто послание?</p>
+            <p>Музыка может хранить секреты в своей структуре.</p>
+            <p>А что, если взглянуть на звук иначе?</p>
+        </div>
+        <audio controls autoplay>
+            <source src="sounds/hidden_message.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+        <br>
+        <a href="sounds/hidden_message.mp3" download class="download-btn">Скачать аудиофайл</a>
+    </div>
+</body>
+</html>
